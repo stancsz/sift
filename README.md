@@ -4,6 +4,8 @@
 
 # Sift
 
+[Unpublished research draft (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex) · [Product and research values](#product-and-research-values)
+
 **When tool history grows, keep relevant evidence in your coding agent’s next request.**
 
 [![Tests](https://github.com/stancsz/sift/actions/workflows/test.yml/badge.svg)](https://github.com/stancsz/sift/actions/workflows/test.yml)
@@ -379,3 +381,14 @@ This opt-in benchmark makes 18 sequential model calls across three authored case
 </details>
 
 Sift is informed by [question-aware compression](https://arxiv.org/abs/2310.06839), [extractive prompt compression](https://arxiv.org/abs/2403.12968), and [middle-position retrieval failures](https://arxiv.org/abs/2307.03172). Its deterministic heuristic is a separate implementation. Released under the [MIT license](LICENSE).
+
+## Product and research values
+
+Sift preserves the active request and recent tool work, selects older task-related excerpts within a budget, and fails closed when current work cannot fit.
+
+- **Current-task preservation:** protected work is not silently dropped to satisfy a token target.
+- **No generated summary step:** selection is deterministic.
+- **Measured trade-off:** on the exposed 343-question paired cohort, Sift used 59.66% fewer prompt tokens and scored 5.25 points lower on task-majority than Full context.
+- **Limits remain visible:** this is not blind evidence or coding-agent success evidence; broad agent quality is not established.
+
+[Unpublished research draft (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex). Not submitted to arXiv; no identifier is claimed.
