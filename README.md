@@ -4,7 +4,7 @@
 
 # Sift
 
-[Unpublished research draft (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex) · [Product and research values](#product-and-research-values)
+[Official site](https://stancsz.github.io/sift/) · [Market position and maturity](docs/market-position.md) · [Unpublished research draft (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex) · [Product and research values](#product-and-research-values)
 
 **When tool history grows, keep relevant evidence in your coding agent’s next request.**
 
@@ -12,6 +12,8 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](pyproject.toml)
 [![MIT license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Release](https://img.shields.io/github/v/tag/stancsz/sift?label=release)](https://github.com/stancsz/sift/tags)
+
+**Maturity:** public pre-release. The exposed LongBench cohort shows a measured token/score trade-off; blind coding-agent quality, broad retention, and external adoption remain unestablished. See [market position and next experiment](docs/market-position.md).
 
 For coding-agent builders with long tool histories, Sift preserves the active request and tool work exactly when they fit, deterministically selects older task-related excerpts, and fails closed if current work cannot fit. It does this without a summary-model call.
 
